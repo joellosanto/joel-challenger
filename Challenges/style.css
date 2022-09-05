@@ -1,0 +1,369 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #E5E5E5;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 124px;
+    text-align: center;
+    margin-bottom: 40px;
+    background-image: url(imagenes/rotores-enigma.jpg);
+}
+
+h1{
+    display: block;
+    font-family: fantasy;
+    font-size: 3.5em;
+    font-weight: 48px;
+    color: rgb(243, 25, 25);
+    margin-bottom: 40px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: 40px;
+    gap: 40px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    background-image: url(imagenes/encriptadorimg.jpg);
+    background-size: contain;
+    padding: 0%;
+}
+
+.contenedor_enc{
+    text-align: center;
+    align-self: center;
+    margin-bottom: -15px;
+}
+
+#encriptar{
+    padding-top: 30px;
+    padding-left: 15px;
+    font-size: 3vw;
+    height: 30vw;
+    width: 50vw;
+    color:#0A3871;
+    border: none;
+    background: #e5e5e5af;
+    outline: none;  
+    border-radius: 25px;    
+}
+
+#encriptar::placeholder{
+    padding-left: 15px;
+    color: #804000; 
+}
+
+.fuente::placeholder{
+    margin-top: 200px;
+}
+
+.advertecia p{
+    padding:0px;
+    font-size: 12px;
+    color:darkblue; 
+    font-weight: 100;   
+}
+
+.advertecia{
+    margin: 10px;
+    background: orange;
+    border-radius: 40px;
+    display: block;
+    text-align: start;
+    text-align: center;
+}
+
+
+#boton-derecho , #boton-izquierdo{
+    width: 328px;
+    height: 67px;
+    background:#804000;
+    color: white;
+    font-size: 18px;
+    border-radius: 24px;
+    margin-right: 20px;
+    transition: 1s all;
+    cursor:pointer;        
+}
+
+#boton-derecho:hover{
+    transform: scale(1.05);
+}
+
+#boton-izquierdo:hover{
+    transform: scale(1.05);
+}
+
+
+#desencriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 400px;
+    height: 700px;
+    margin: 10px 40px;
+    background: rgba(255, 255, 255, 0.603);
+    border-radius: 32px;
+    text-align: center;
+       
+}
+
+.mensaje2{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    height: 800px;
+    background-image: url(imagenes/MuñecoMuñeco.png);
+    background-repeat: no-repeat ;
+    background-position: center;
+    font-size: 2vw;
+    padding-top: 20px;
+    outline: none;
+}
+
+.mensaje2::placeholder{
+    padding-top: 500px;
+    color: #0A3871;
+    font-size: 1.5vw;
+}
+
+.desenTitulo{
+    width: 328px;
+    margin: 0 32px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #343a40;
+   position: absolute;
+   padding-bottom: 300px;
+   visibility: visible;
+
+
+}
+
+#textDesn{
+    border: none;
+    text-align: center;
+}
+
+#boton-copiar{
+    width: 328px;
+    height: 90px;
+    font-size: 18px;
+    background:#0A3871;
+    color: white;
+    border: 1px solid #040608;
+    border-radius: 24px;
+    transition: 1s all;
+    cursor:pointer;
+    margin-bottom: 40px;
+    visibility: hidden;
+
+}
+footer{
+    text-align: center;
+    background-image: url(imagenes/Bombe.jpg);
+    width: 100%;
+    height: 100px;
+}
+
+h3{
+    font-family: 'Special Elite', cursive;
+    margin: 5px auto;
+    text-align: center;
+    color: orange;
+    font-size: 1.2rem;
+}
+
+ul li{
+    
+    font-size: 3rem;
+    display: inline-flex;
+    list-style: none;
+}
+
+ul li a{
+    color: white;
+    padding:10px
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    main{
+        display: inline-block;
+    }
+
+    #encriptar{
+        margin-top: 15px;
+        width: 95%;
+        font-size: 2rem;
+        
+    }
+   
+    .botonera{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .advertecia{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #boton-derecho , #boton-izquierdo{
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+
+    #boton-copiar{
+        padding: 15px;
+    }
+
+    #desencriptado{
+        width: 90%;
+        margin: 30px auto;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    .mensaje2{
+        width: 100%;
+        background-size: contain;
+        background-position: right;
+        font-size: 2rem;
+        
+        
+    }
+
+    .desenTitulo{
+        text-align: left; 
+        height: 250px;
+        padding: 5px;
+        
+    }
+
+    .mensaje2::placeholder{
+        padding-top: 210px;
+        font-size: 1.5rem;
+       
+    }
+
+    
+
+}
+
+@media screen and (max-width:700px) {
+    body{
+        width: auto;
+    }
+
+    header{
+        display: flex;
+    }
+
+    .logo{
+        margin-bottom: 30px;
+    }
+    h1{
+        margin: 30px auto;
+        text-align: center;
+        font-size: 2rem;
+        padding:0%;
+        padding-top: 20px;
+    }
+
+    main{
+        width: 100%;
+        margin: 0px;
+    }
+    #encriptar, .mensaje2{
+        font-size: 1.5rem;
+    }
+    #encriptar::placeholder{
+        font-size: 1.5rem;        
+    }
+
+    .botonera{
+        display: grid;
+        row-gap: 10px;
+    }
+
+    #boton-copiar{
+    padding: 15px;
+    margin-bottom: 5px;
+    }
+   
+}
+
+@media screen and (max-width:400px){
+
+    header{
+        display: flex;
+    }
+    .logo{
+        margin:20px;
+    }
+    h1{
+        margin: 30px auto;
+        font-size: 2em;
+    }
+
+    #boton-derecho , #boton-izquierdo{
+        height: 40px;
+        width: 98%;   
+    }
+
+    #encriptar{
+        font-size: 1.5rem;
+    }
+
+    #desencritado{
+        height: 250px;
+    }
+
+    #boton-copiar{
+        height: auto;
+
+    }
+    
+    .mensaje2{
+        background-size: contain;
+        height: 200px;
+    }
+    .desenTitulo{
+        width: auto;
+        height: 150px;
+    }
+
+    .mensaje2::placeholder{
+        visibility: hidden;
+    }
+    ul li{
+    
+        font-size: 3rem;
+        display: inline-flex;
+        list-style: none;
+    }
+    #textDesn{
+        font-size: 1.5rem;
+
+    }
+}
+

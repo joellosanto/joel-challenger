@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width">
+        <link rel="stylesheet" href="imagenes/reset.css" >
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    
+        <header>
+            <img class="logo" src="imagenes/Logologo.png">
+            <h1><strong>ENCRIPTADOR</strong></h1>
+        </header>
+        <main>
+            <section class="contenedor_enc">
+                <textarea id ="encriptar" class="fuente mensaje1" name="texto" cols="20" rows="5" placeholder="Ingrese el texto aquí"></textarea>
+
+                <div class="botonera">
+                    <div class="advertecia"><p class="simbolo">Solo letras minusculas sin acentos</p></div>
+                
+                    <button  class="fuente"  id="boton-derecho" onclick="btnEncrp()" >
+                    Encriptar
+                    </button>
+    
+                    <button class="fuente" id="boton-izquierdo" onclick="btoDescrip()">Desencriptar</button>
+        
+                </div>
+
+            </section>
+      
+            <section id="desencriptado">
+
+                <textarea id="textDesn" class="fuente mensaje2" name="texto" cols="40" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
+            
+                <button class="fuente" id="boton-copiar" onclick="btoCopiar()">Copiar</button>
+
+            </section>
+        </main>
+        <footer>
+            <h3>ONE- Oracle Next Education</h3>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
